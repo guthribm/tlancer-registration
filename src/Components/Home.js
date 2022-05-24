@@ -1,26 +1,28 @@
 import NavbarMain from "./Navbar";
-import HeroMain from "./Hero";
-import GreySpacer from "./GreySpacer";
-import Courses from "./Courses";
+import HeroFull from "./HeroFull";
+import WhiteSpacer from "./WhiteSpacer";
+import Student from "./Student";
 import Tutor from "./Tutor";
 import Footer from "./Footer";
-import Blog from "./Blog";
-import Testimonies from "./Testimonies";
-import Certified from "./Certified";
+// import Testimonies from "./Testimonies";
+import About from "./AboutUs";
+import Mission from "./Mission";
 
 const Home = () => {
   return (
     <>
       <NavbarMain />
-      <HeroMain />
-      <GreySpacer height="119px" />
-      <Courses />
+      <HeroFull />
+      <WhiteSpacer height="10px" />
+      <Student />
+      <WhiteSpacer height="40px" />
       <Tutor />
-      <Testimonies />
-      <GreySpacer height="131px" />
-      <Blog />
-      <GreySpacer height="104px" />
-      <Certified />
+      <WhiteSpacer height="40px" />
+      <About />
+      <WhiteSpacer height="40px" />
+      <Mission />
+      <WhiteSpacer height="40px" />
+      {/* <Testimonies /> */}
       <Footer />
     </>
   );

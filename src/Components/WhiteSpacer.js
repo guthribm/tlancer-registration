@@ -1,9 +1,9 @@
-const GreySpacer = (props) => {
+const WhiteSpacer = (props) => {
   return (
     <>
       <style type="text/css">{`.spacer {
-      background: #F3F4F6;
-      margin: 5rem 0 0;
+      background: #fff;
+      margin: 2rem 0;
   }`}</style>
       <div
         className="spacer w-100 container-fluid"
@@ -15,4 +15,4 @@ const GreySpacer = (props) => {
   );
 };
 
-export default GreySpacer;
+export default WhiteSpacer;

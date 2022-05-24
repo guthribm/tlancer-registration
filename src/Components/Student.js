@@ -1,64 +1,78 @@
-import tutorImg from "../images/instructor.png";
+import studentImg from "../images/student-img.png";
 
-const Tutor = () => {
-  function tutorHandler() {
-    document.getElementById("tutor-signup-btn").style.display = "none";
-    document.getElementById("tutor-form").style.display = "flex";
+const Student = () => {
+  function studentHandler() {
+    document.getElementById("student-signup-btn").style.display = "none";
+    document.getElementById("student-form").style.display = "flex";
   }
   return (
     <>
-      <style type="text/css">{`@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap');
-              {/* .tutor-img {
-                max-width: 541px;
-                max-height: 501px;
-            } */}
-            #tutor-form {
+      <style type="text/css">{`
+      
+      @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap');
+
+            ::placeholder {
+              color: black;
+            }
+            
+            #student-form {
               position: relative;                     
               display: none;
               transition: .3s;
             }
-            #tutor-signup-btn {
-                letter-spacing: .8px;
-                border: none;
-                outline: none;
+            .student-img {
+                max-width: 681px;
+                max-height: 454px;
             }
             .tutor-text {
                 line-height: 2.0 !important;
                 font-weight: 500;
             }
-            #tutor {
+            #student {
                 background: #F3F4F6;
                 width: 100%;
             }
-            .tutor-btn {
-                background: #0ECD88;
+            #student-signup-btn {
                 letter-spacing: .8px;
                 border: none;
+                outline: none;
             }
-            .left {
-                width: 50px;
-
+                       
+            .tutor-btn {
+                background: var(--main-green);
+                
+                {/* max-width: 250px; */}
             }
+            form input {
+              border: 2px solid var(--main-green);              
+            }
+           
             `}</style>
-      <section id="tutor">
+      <section id="student">
         <div className="p-5 my-5 container-fluid">
-          <div className="py-5 m-5 d-flex mx-auto justify-content-center align-items-center flex-lg-row">
-            <div className="left align-self-start px-5 mx-5 mt-5 col">
-              <h2 className="fw-bold h1 w-100">Become a Tutor Today</h2>
+          <div className="py-5 d-flex flex-column flex-lg-row m-5 justify-content-center align-items-start">
+            <img
+              className="mx-5 img-fluid pe-5 pt-5"
+              alt="student on computer"
+              src={studentImg}
+            />
+
+            <div className="px-0 mx-5 col">
+              <h2 className="fw-bold h1">Register and join other students</h2>
               <p className="tutor-text fs-4 text-dark my-3">
-                Join thousands of other instructors on Tlancer to teach millions
+                Join thousands of other students on Tlancer to teach millions
                 across the globe. We provide the tools and skills to teach what
                 you love.
               </p>
               <button
-                onClick={tutorHandler}
-                id="tutor-signup-btn"
-                className="tutor-btn mt-4 px-3 btn btn-lg"
+                onClick={studentHandler}
+                id="student-signup-btn"
+                className="btn btn-lg"
               >
-                Start Teaching Today
+                Sign Up Today
               </button>
               <form
-                id="tutor-form"
+                id="student-form"
                 className="flex-column w-50"
                 action="mailto:guthribm@gmail.com"
                 method="post"
@@ -98,12 +112,6 @@ const Tutor = () => {
                 </button> */}
               </form>
             </div>
-
-            <img
-              className="tutor-img pe-5 me-5 img-fluid mt-5"
-              alt="man with beard"
-              src={tutorImg}
-            />
           </div>
         </div>
       </section>
@@ -111,4 +119,4 @@ const Tutor = () => {
   );
 };
 
-export default Tutor;
+export default Student;

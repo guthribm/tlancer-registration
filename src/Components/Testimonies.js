@@ -20,11 +20,14 @@ const Testimonies = () => {
         right: 1.75rem;
         
     }
-    .riley {
-        position: relative;
-        width: 60%;
-        bottom: 5rem;
-    }
+    #huey {}
+    #putin {}
+    #riley {
+      position: relative;
+      width: 60%;
+      bottom: 5rem;
+    }    
+
     `}</style>
       <div className="p-5 container">
         <div className="w-75 my-5 align-items-start mx-0 row">

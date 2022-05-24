@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700;800&display=swap');
+:root {
+  --main-green: #0ecd88;
+  --main-green-hover: rgba(14, 205, 136, .7);
+}
 *, *::before, *::after {
   box-sizing: border-box;
   /* border: 1px solid red; */
@@ -10,3 +13,12 @@ html, body {
   padding: 0;
 }
 
+.btn {
+  background: var(--main-green)!important;
+  color: #fff!important;
+  width: 250px!important;
+}
+
+#student, #home, #tutor, #student, #about {
+  padding: 1rem 3rem;
+}

@@ -57,8 +57,8 @@ const Footer = () => {
         className="container-fluid px-0 py-5 p-lg-5 position-relative"
         style={{ background: "#00832d", fontFamily: "Inter, sans-serif" }}
       >
-        <div className="px-lg-5 pb-5 pt-0 mt-lg-5 d-flex justify-content-start align-items-start flex-row flink vstack">
-          <div className="footer-header w-50 px-0 vstack">
+        <div className="px-lg-5 pb-5 pt-0 mt-lg-5 d-flex justify-content-start align-items-start flex-row w-50 me-auto">
+          <div className="footer-header ps-5 ms-5">
             <h2 className="footer-logo text-white fw-bolder mb-lg-4">
               Tlancer
             </h2>
@@ -67,7 +67,7 @@ const Footer = () => {
               world.
             </p>
           </div>
-          <div className="d-flex flex-column w-25 my-3 my-lg-0">
+          {/* <div className="d-flex flex-column w-25 my-3 my-lg-0">
             <button className="footer-link">Product</button>
             <button className="footer-link">Overview</button>
             <button className="footer-link">Features</button>
@@ -111,7 +111,7 @@ const Footer = () => {
             <button className="footer-link">Licenses</button>
             <button className="footer-link">Settings</button>
             <button className="footer-link">Contact</button>
-          </div>
+          </div> */}
         </div>
         {/* Copyright and social icons container start*/}
         <div className="footer-icon-container border-top border-light align-items-center mt-4 d-flex w-75 pt-4 px-0 container-fluid">

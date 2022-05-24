@@ -38,35 +38,40 @@ const HeroMain = () => {
          }
             `}
       </style>
-      <div className="container-fluid p-5 hero-container">
-        <div className="row p-4 mt-5">
-          <div className="col pe-4">
-            <h1 className="mb-4">
-              Learn any course at your own pace here from world class tutors
-            </h1>
-            <p className="w-75 pe-3 pb-4">
-              Hackton is the leading online coding tutor for beginners. Join us
-              today to take a step further.
-            </p>
-          </div>
-          <div className="col position-relative">
-            <img
-              className="position-absolute elements img-fluid"
-              src={elements}
-              width="730px"
-              height="414px"
-              alt="yellow triangle decorations"
-            />
-            <img
-              className="ms-5 img-fluid"
-              src={hero}
-              width="880px"
-              height="514px"
-              alt="rear view of programmer working"
-            />
+      <section id="home2">
+        <div className="container-fluid p-5 hero-container">
+          <div className="row p-5">
+            <div className="col pe-5">
+              <h1 className="mb-5 fw-semibold">
+                Learn any course at your own pace here from world class tutors
+              </h1>
+              <p className="fs-4 pe-3 pb-4">
+                Hackton is the leading online coding tutor for beginners join us
+                today to take a step further.Hackton is the leading online
+                coding tutor for beginners join us today to take a step
+                further.Hackton is the leading online coding tutor for beginners
+                join us today to take a step further.
+              </p>
+            </div>
+            <div className="col position-relative">
+              <img
+                className="position-absolute elements img-fluid"
+                src={elements}
+                width="730px"
+                height="414px"
+                alt="yellow triangle decorations"
+              />
+              <img
+                className="ms-5 img-fluid"
+                src={hero}
+                width="880px"
+                height="514px"
+                alt="rear view of programmer working"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
