@@ -4,8 +4,9 @@ import WhiteSpacer from "./WhiteSpacer";
 import Student from "./Student";
 import Tutor from "./Tutor";
 import Footer from "./Footer";
-// import Testimonies from "./Testimonies";
+import Testimonies from "./Testimonies";
 import About from "./AboutUs";
+import ContactUs from "./Contact";
 import Mission from "./Mission";
 
 const Home = () => {
@@ -22,7 +23,9 @@ const Home = () => {
       <WhiteSpacer height="40px" />
       <Mission />
       <WhiteSpacer height="40px" />
-      {/* <Testimonies /> */}
+      <Testimonies />
+      <ContactUs />
+      <WhiteSpacer height="10px" />
       <Footer />
     </>
   );

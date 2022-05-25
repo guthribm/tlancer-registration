@@ -53,7 +53,7 @@ const Tutor = () => {
               <button
                 onClick={tutorHandler}
                 id="tutor-signup-btn"
-                className="tutor-btn mt-4 px-3 btn btn-lg"
+                className="mt-4 px-3 btn btn-lg"
               >
                 Start Teaching Today
               </button>

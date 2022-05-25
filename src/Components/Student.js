@@ -37,11 +37,13 @@ const Student = () => {
                 border: none;
                 outline: none;
             }
+            #submit {
+              width: 100%!important;
+            }
                        
             .tutor-btn {
                 background: var(--main-green);
-                
-                {/* max-width: 250px; */}
+                width: 100%!important;
             }
             form input {
               border: 2px solid var(--main-green);              
@@ -100,7 +102,7 @@ const Student = () => {
                 />
                 <button
                   type="submit"
-                  className="tutor-btn mt-3 px-2 btn btn-lg text-nowrap w-100"
+                  className="tutor-btn mt-3 px-2 btn btn-lg text-nowrap"
                 >
                   Submit
                 </button>

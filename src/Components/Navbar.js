@@ -157,6 +157,12 @@ const NavbarMain = () => {
                 Our Mission
               </a>
               <a
+                className="nav-link mx-0 mx-lg-1 mx-xl-2 text-nowrap"
+                href="#testimonials"
+              >
+                Testimonials
+              </a>
+              <a
                 className="nav-link mx-0 mx-lg-1 mx-xl-2 fs-xl-1 text-nowrap"
                 href="#contact"
               >

@@ -29,7 +29,7 @@ const Mission = () => {
           </p>
           <div className="container-fluid row mt-5 py-2">
             <div className="col">
-              <h3 className="large-txt w-75">
+              <h3 className="large-txt me-5">
                 At Tlancer we connect students with the best tutors
               </h3>
               <p className="fs-3 lh-lg py-4 pe-5">

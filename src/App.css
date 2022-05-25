@@ -5,12 +5,13 @@
 }
 *, *::before, *::after {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1p/x solid red;
 }
 
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .btn {
