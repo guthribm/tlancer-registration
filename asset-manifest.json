@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tlancer-registration/static/css/main.793aa345.css",
-    "main.js": "/tlancer-registration/static/js/main.c8a4bc7b.js",
+    "main.js": "/tlancer-registration/static/js/main.1e4935c7.js",
     "static/media/mission-img.png": "/tlancer-registration/static/media/mission-img.34961b49418bea693246.png",
     "static/media/student-img.png": "/tlancer-registration/static/media/student-img.61cb88d9dca893bedeec.png",
     "static/media/about-image.png": "/tlancer-registration/static/media/about-image.cd84368a8601ccb92f06.png",
@@ -9,10 +9,10 @@
     "static/media/instructor.webp": "/tlancer-registration/static/media/instructor.65621e49c5bd1ee01986.webp",
     "index.html": "/tlancer-registration/index.html",
     "main.793aa345.css.map": "/tlancer-registration/static/css/main.793aa345.css.map",
-    "main.c8a4bc7b.js.map": "/tlancer-registration/static/js/main.c8a4bc7b.js.map"
+    "main.1e4935c7.js.map": "/tlancer-registration/static/js/main.1e4935c7.js.map"
   },
   "entrypoints": [
     "static/css/main.793aa345.css",
-    "static/js/main.c8a4bc7b.js"
+    "static/js/main.1e4935c7.js"
   ]
 }
