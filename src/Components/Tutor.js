@@ -1,4 +1,4 @@
-import tutorImg from "../images/instructor.png";
+import tutorImg from "../images/instructor.webp";
 
 const Tutor = () => {
   function tutorHandler() {
@@ -8,10 +8,7 @@ const Tutor = () => {
   return (
     <>
       <style type="text/css">{`@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap');
-              {/* .tutor-img {
-                max-width: 541px;
-                max-height: 501px;
-            } */}
+             
             #tutor-form {
               position: relative;                     
               display: none;
@@ -22,10 +19,7 @@ const Tutor = () => {
                 border: none;
                 outline: none;
             }
-            .tutor-text {
-                line-height: 2.0 !important;
-                font-weight: 500;
-            }
+            
             #tutor {
                 background: #F3F4F6;
                 width: 100%;
@@ -40,12 +34,12 @@ const Tutor = () => {
 
             }
             `}</style>
-      <section id="tutor">
-        <div className="p-5 my-5 container-fluid">
-          <div className="py-5 m-5 d-flex mx-auto justify-content-center align-items-center flex-lg-row">
-            <div className="left align-self-start px-5 mx-5 mt-5 col">
-              <h2 className="fw-bold h1 w-100">Become a Tutor Today</h2>
-              <p className="tutor-text fs-4 text-dark my-3">
+      <section id="tutor" className="px-0">
+        <div className="container-fluid pt-md-5 pb-md-1">
+          <div className="row py-5 my-5 gx-5 mx-auto">
+            <div className="col-md-6 order-2 order-lg-1 ps-md-3 text-center text-md-start">
+              <h2 className="fw-bold h1">Become a Tutor Today</h2>
+              <p className="body-text fs-4 text-dark my-3">
                 Join thousands of other instructors on Tlancer to teach millions
                 across the globe. We provide the tools and skills to teach what
                 you love.
@@ -53,7 +47,7 @@ const Tutor = () => {
               <button
                 onClick={tutorHandler}
                 id="tutor-signup-btn"
-                className="mt-4 px-3 btn btn-lg"
+                className="mt-4 px-4 btn btn-lg text-nowrap"
               >
                 Start Teaching Today
               </button>
@@ -98,12 +92,13 @@ const Tutor = () => {
                 </button> */}
               </form>
             </div>
-
-            <img
-              className="tutor-img pe-5 me-5 img-fluid mt-5"
-              alt="man with beard"
-              src={tutorImg}
-            />
+            <div className="col-md-6 text-end mb-5 mt-md-0">
+              <img
+                className="img-fluid"
+                alt="man reading a bedtime story to another man"
+                src={tutorImg}
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -7,13 +7,15 @@ const NavbarMain = () => {
               --main-green: #0ecd88;
               --main-green-hover: rgba(14, 205, 136, .7);
             }
+
+            nav {
+              font-family: 'Ubuntu', sans-serif;
+            }
                  
 
             {/* ######## START LOGO ########*/}
             .logo {
-               color: var(--main-green);
-               font-size: 32px; 
-               font-family: 'Ubuntu', sans-serif;
+               color: var(--main-green);              
                text-decoration: none;
                cursor:pointer;
                outline: none;
@@ -23,20 +25,31 @@ const NavbarMain = () => {
             }
             {/* ######## END LOGO ########*/}
 
+
+
+
             {/* ######## START HAMBURGER MENU ########*/}
-            .navbar-toggler {
-             font-size: 3.5rem;    
+            .navbar-toggler-icon {
+              background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(14, 205, 136)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+
+            .navbar-toggler {                 
              color: var(--main-green);  
-             border: 2px solid pink;
+             border: 2px solid transparent;
+             
             }
             .navbar-toggler:focus {
-              border: 2px solid var(--main-green); 
+              border-color: var(--main-green-hover); 
               outline: none;
               box-shadow: var(--main-green-hover)             
             }
             
-            {/* ######## END HAMBURGER MENU ########*/}
+            {/* ######## END HAMBURGER MENU ######## */}
 
+
+            .nav-item {              
+              margin: 0;
+            }
             {/* ######## START NAVLINKS ########*/}
             .nav-link {
                 font-family: 'Ubuntu', sans-serif; 
@@ -64,112 +77,127 @@ const NavbarMain = () => {
             {/* ######## END NAVLINKS ########*/}
 
             .navbar-green {
-              border-bottom: 2px solid var(--main-green);
-            }    
-
-           
+              border-bottom: 3px solid var(--main-green);
+            }   
 
           
             
             {/* ######## START MEDIA QUERIES ########*/}
             @media (max-width: 1320px) {
-               .nav-link,
+               .nav-link
                {
-                font-size: 1.15rem;
-                font-weight: normal;
+                font-size: 1.15rem!important;
+                font-weight: normal!important;
               }             
             }  
-
-            @media (max-width: 991px) {
-              
-              .navbar-toggler {
-                order: 0;
-                padding-left: 0;
+            @media (max-width: 992px) {
+              .nav-link {
+                font-size: 1rem!important;
               }
-              .logo {
-                order: 1;
-                margin-left: auto;
-                margin-top: 1rem;
-                font-size: 2.5rem;
-                margin-bottom: -.5rem;
+            }
+          
+            @media (max-width: 768px) {                            
+              .mobile {
+                width: 100%!important;
               }
               .navbar-collapse {
                 padding: 1rem;
-              }
-              .nav-link {
-                font-size: 1.75rem;
-              }
-              
+              }             
               
             }          
-            @media (max-width: 480px) {
-              .navbar-toggler {
-                font-size: 1.5rem;
-              }
-              .logo {
+            @media (max-width: 480px) {              
+              {/* .logo {
                 font-size: 2rem;
+              } */}
+              .nav-link {
+                font-size: 1.25rem!important;
               }
-              
+             
             }
             {/* ######## END MEDIA QUERIES ########*/}
 
             `}
       </style>
-      <div className="nav navbar navbar-green navbar-expand-lg fixed-top pt-3 pb-2 px-3 pt-lg-4 px-lg-4 px-xl-5 pb-lg-3 bg-white">
-        <div className="w-lg-25 d-flex align-items-center justify-content-between">
-          <div href="#home" className="fw-bold logo navbar-brand">
+      <div className="nav navbar navbar-green navbar-expand-md fixed-top bg-white px-2 pt-2 pb-1 px-md-4 pt-md-3 pb-md-2">
+        <div className="container mobile d-flex w-25 align-items-center justify-content-between">
+          <a
+            href="/"
+            class="navbar-brand d-flex ms-md-3 me-0 logo fw-bold fs-1"
+          >
             Tlancer
-          </div>
+          </a>
 
           <button
+            id="hamburger-btn"
             aria-controls="responsive-navbar-nav"
             class="navbar-toggler collapsed p-1 my-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#responsive-navbar-nav"
+            data-bs-auto-close="true"
           >
-            <i class="bi bi-list"></i>
+            <span class="navbar-toggler-icon"></span>
           </button>
         </div>
 
         <div
-          className="navbar-collapse collapse"
-          id="responsive-navbar-nav d-lg-none"
+          className="navbar-collapse collapse w-100"
+          id="responsive-navbar-nav"
         >
-          <div className="navbar-nav d-flex w-100 justify-content-end">
-            <div className="d-flex flex-column flex-lg-row justify-content-end align-items-lg-center w-75 w-lg-100">
-              <a className="nav-link mx-0 mx-lg-1 mx-xl-2" href="#home">
+          <ul className="nav navbar-nav ms-auto w-100 justify-content-end">
+            <li className="nav-item">
+              <a className="nav-link mx-0 fs-4 mx-lg-1 mx-xl-2" href="#home">
                 Home
               </a>
-              <a className="nav-link mx-0 mx-lg-1 mx-xl-2" href="#student">
+            </li>
+            <li className="nav-item">
+              <a className="nav-link mx-0 fs-4 mx-lg-1 mx-xl-2" href="#student">
                 Student
               </a>
-              <a className="nav-link mx-0 mx-lg-1 mx-xl-2" href="#tutor">
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link mx-0 fs-4 mx-lg-1 mx-xl-2" href="#tutor">
                 Tutor
               </a>
+            </li>
+
+            <li className="nav-item">
               <a
-                className="nav-link mx-0 mx-lg-1 mx-xl-2 text-nowrap"
+                className="nav-link mx-0 fs-4 mx-lg-1 mx-xl-2 text-nowrap"
                 href="#about"
               >
                 About Us
               </a>
+            </li>
+
+            <li className="nav-item">
               <a
-                className="nav-link mx-0 mx-lg-1 mx-xl-2 text-nowrap"
+                className="nav-link mx-0 fs-4 mx-lg-1 mx-xl-2 text-nowrap"
                 href="#mission"
               >
                 Our Mission
               </a>
+            </li>
+
+            <li className="nav-item">
               <a
-                className="nav-link mx-0 mx-lg-1 mx-xl-2 text-nowrap"
+                className="nav-link mx-0 fs-4 mx-lg-1 mx-xl-2 text-nowrap"
                 href="#testimonials"
               >
                 Testimonials
               </a>
+            </li>
+
+            <li className="nav-item">
               <a
-                className="nav-link mx-0 mx-lg-1 mx-xl-2 fs-xl-1 text-nowrap"
+                className="nav-link mx-0 fs-4 mx-lg-1 mx-xl-2 fs-xl-1 text-nowrap"
                 href="#contact"
               >
                 Contact Us
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </>

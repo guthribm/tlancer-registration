@@ -1,4 +1,4 @@
-import HeroFullImg from "../images/HeroFullImage.png";
+import HeroFullImg from "../images/HeroFullImage.webp";
 const HeroFull = () => {
   return (
     <>
@@ -8,49 +8,79 @@ const HeroFull = () => {
           background: blue;
           position: absolute;
           top: -50rem;
-        }
+        } 
+
         #home-container {
-            margin-top: 5.8rem;
-            padding-top: 8rem;
-            z-index: 0;
-            position: relative;            
-            
-        }
-        .tinter {
-          background: rgba(0,0,0,.7)          
-        }
+         padding-top: 5rem;
+       }  
+
        .hero-text {
-           font-size: 4.25rem;
+           font-size: 2.25rem;
+           
        }
-       .btn-hero {
-           background: var(--main-green);
-           color: #fff;
-           width: 250px;
-           z-index: 2;
+       
+
+       {/* Mobile and SMALLER Breakpoint */}
+       @media (max-width: 576px) {
+        .hero-text {
+           font-size: 1.75rem;
+           {/* text-align: left;
+           padding-left: 1rem; */}
+       } 
+       #home-container {
+         padding-top: 8rem;
+       }  
        }
+       
         
-       @media (max-width: 1320px) {}
+        {/* Tablet to Desktop Breakpoint */}
+       @media (min-width: 768px) {
+        #home-container {
+            margin-top: 5rem;
+            padding-top: 10rem;
+            padding-bottom: 5rem;            
+        }
+        .hero-text {
+           font-size: 3.5rem;                      
+       }
+       }
+
+       {/* Desktop and GREATER Breakpoint */}
+       @media (min-width: 1200px) {
+        .hero-text {
+           font-size: 4.6rem;                      
+       }
+       }
+       
         `}
       </style>
       <div
+        className="px-0 bg-black py-5 bg-opacity-75"
         style={{
           background: `url(${HeroFullImg})`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
+          backgroundBlendMode: "hue",
+          backgroundSize: "cover",
         }}
       >
         <div id="home"></div>
-        <section id="home-container" className="container-fluid px-5 tinter">
-          <div className="container-fluid d-flex flex-column p-5 m-auto text-white align-items-center">
-            <h1 className="hero-text lh-lg text-center px-5">
-              Welcome to Tlancer where you can learn thousands of courses at
-              your own pace here from the best tutors across the world
-            </h1>
-            <a href="#student" className="btn btn-hero fw-semibold fs-4 my-5">
-              Get Started
-            </a>
+        <div id="home-container" class="container-fluid">
+          <div class="row">
+            <div class="col text-center text-white">
+              <h1 class="hero-text lh-md-lg px-md-5">
+                Welcome to Tlancer where you can learn thousands of courses at
+                your own pace here from the best tutors across the world
+              </h1>
+            </div>
+            <div class="col-md-12 text-center my-5">
+              <a href="#student" class="btn fs-2 fw-bold px-5 btn-lg ">
+                Get Started
+              </a>
+            </div>
           </div>
-        </section>
+          <br />
+        </div>
       </div>
     </>
   );

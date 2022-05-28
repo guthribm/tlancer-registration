@@ -3,30 +3,33 @@ import HeroFull from "./HeroFull";
 import WhiteSpacer from "./WhiteSpacer";
 import Student from "./Student";
 import Tutor from "./Tutor";
-import Footer from "./Footer";
 import Testimonies from "./Testimonies";
 import About from "./AboutUs";
-import ContactUs from "./Contact";
 import Mission from "./Mission";
+// import ComingSoon from "./ComingSoon";
+import ContactUs from "./Contact";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
     <>
       <NavbarMain />
       <HeroFull />
-      <WhiteSpacer height="10px" />
+      <WhiteSpacer height="5px" />
       <Student />
-      <WhiteSpacer height="40px" />
+      <WhiteSpacer height="10px" />
       <Tutor />
-      <WhiteSpacer height="40px" />
+      <WhiteSpacer height="10px" />
       <About />
-      <WhiteSpacer height="40px" />
+      <WhiteSpacer height="10px" />
       <Mission />
-      <WhiteSpacer height="40px" />
+      <WhiteSpacer height="10px" />
       <Testimonies />
       <ContactUs />
+      {/* <ComingSoon section="Contact Us" /> */}
       <WhiteSpacer height="10px" />
       <Footer />
+      {/* <ComingSoon section="Footer" /> */}
     </>
   );
 };

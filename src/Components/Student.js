@@ -1,4 +1,4 @@
-import studentImg from "../images/student-img.png";
+import studentImg from "../images/student-img.webp";
 
 const Student = () => {
   function studentHandler() {
@@ -8,8 +8,7 @@ const Student = () => {
   return (
     <>
       <style type="text/css">{`
-      
-      @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap');
+            
 
             ::placeholder {
               color: black;
@@ -18,12 +17,8 @@ const Student = () => {
             #student-form {
               position: relative;                     
               display: none;
-              transition: .3s;
             }
-            .student-img {
-                max-width: 681px;
-                max-height: 454px;
-            }
+            
             .tutor-text {
                 line-height: 2.0 !important;
                 font-weight: 500;
@@ -50,18 +45,21 @@ const Student = () => {
             }
            
             `}</style>
-      <section id="student">
-        <div className="p-5 my-5 container-fluid">
-          <div className="py-5 d-flex flex-column flex-lg-row m-5 justify-content-center align-items-start">
-            <img
-              className="mx-5 img-fluid pe-5 pt-5"
-              alt="student on computer"
-              src={studentImg}
-            />
 
-            <div className="px-0 mx-5 col">
+      <section id="student" className="px-0">
+        <div className="container-fluid py-md-5">
+          <div className="row my-5 py-5 mx-auto gx-5">
+            <div className="col-md-6 text-end mb-5 mt-md-0">
+              <img
+                className="img-fluid"
+                alt="student on computer"
+                src={studentImg}
+              />
+            </div>
+
+            <div className="col text-center text-md-start ps-md-3">
               <h2 className="fw-bold h1">Register and join other students</h2>
-              <p className="tutor-text fs-4 text-dark my-3">
+              <p className="body-text fs-4 text-dark my-3">
                 Join thousands of other students on Tlancer to teach millions
                 across the globe. We provide the tools and skills to teach what
                 you love.
@@ -69,10 +67,11 @@ const Student = () => {
               <button
                 onClick={studentHandler}
                 id="student-signup-btn"
-                className="btn btn-lg"
+                className="btn btn-lg px-5 mt-4"
               >
                 Sign Up Today
               </button>
+
               <form
                 id="student-form"
                 className="flex-column w-50"
@@ -106,12 +105,6 @@ const Student = () => {
                 >
                   Submit
                 </button>
-                {/* <button
-                  type="reset"
-                  className="tutor-btn mt-2 px-3 btn btn-primary"
-                >
-                  Reset
-                </button> */}
               </form>
             </div>
           </div>

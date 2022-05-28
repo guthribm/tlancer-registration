@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 :root {
   --main-green: #0ecd88;
   --main-green-hover: rgba(14, 205, 136, .7);
 }
 *, *::before, *::after {
   box-sizing: border-box;
-  border: 1p/x solid red;
+  /* border: 1px solid red; */
 }
 
 html, body {
@@ -14,12 +15,40 @@ html, body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+/* body {
+  overflow-y: hidden;
+} */
+
 .btn {
   background: var(--main-green)!important;
   color: #fff!important;
-  width: 250px!important;
+  /* width: 250px!important;   */
+}
+.body-text {
+  line-height: 2.0 !important;
+  font-weight: 500;
 }
 
-#student, #home, #tutor, #student, #about {
-  padding: 1rem 3rem;
+.btn:hover, .btn:focus {
+  background: var(--main-green-hover)!important;
+  border-color: var(--main-green-hover)!important;
+}
+
+form {
+  max-width: 500px;
+}
+
+.soon {
+  background: var(--main-green)
+}
+
+@media (max-width: 725px){
+  .btn {
+    background: var(--main-green)!important;
+    color: #fff!important;    
+    font-size: 1rem!important;
+  }
+  #tutor-form, #student-form {
+    width: 100%!important;
+  }
 }
