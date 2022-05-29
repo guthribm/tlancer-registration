@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tlancer-registration/static/css/main.e6e85d66.css",
-    "main.js": "/tlancer-registration/static/js/main.91cea0e0.js",
+    "main.js": "/tlancer-registration/static/js/main.eea86606.js",
     "static/media/HeroFullImage.webp": "/tlancer-registration/static/media/HeroFullImage.751fc0a424abf144f145.webp",
     "static/media/instructor.webp": "/tlancer-registration/static/media/instructor.65621e49c5bd1ee01986.webp",
     "static/media/student-img.webp": "/tlancer-registration/static/media/student-img.367c3bc857d290e3df12.webp",
@@ -10,10 +10,10 @@
     "static/media/about-image.webp": "/tlancer-registration/static/media/about-image.f5a94564e23d5975ebb0.webp",
     "index.html": "/tlancer-registration/index.html",
     "main.e6e85d66.css.map": "/tlancer-registration/static/css/main.e6e85d66.css.map",
-    "main.91cea0e0.js.map": "/tlancer-registration/static/js/main.91cea0e0.js.map"
+    "main.eea86606.js.map": "/tlancer-registration/static/js/main.eea86606.js.map"
   },
   "entrypoints": [
     "static/css/main.e6e85d66.css",
-    "static/js/main.91cea0e0.js"
+    "static/js/main.eea86606.js"
   ]
 }
