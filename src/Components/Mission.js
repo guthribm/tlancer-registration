@@ -24,10 +24,11 @@ const Mission = () => {
             
             
         `}</style>
-      <section id="mission" className="px-0 p-md-5">
+      <section id="mission" className="px-0 p-md-5 my-5">
+        <div id="mission-target" className="link-target"></div>
         <div className="container py-5">
           <div className="row">
-            <div class="col text-center">
+            <div className="col text-center">
               <h2 className="fw-bold display-4 h1">Our Mission</h2>
               <p className="fs-4 fw-light pb-lg-1 pt-2 text-start">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris,
@@ -45,6 +46,8 @@ const Mission = () => {
                 id="mission-img"
                 src={missionImage}
                 alt="man in front of microphone"
+                width="643"
+                height="614"
                 className="img-fluid mb-5 my-lg-0 float-md-end px-0 ms-md-5"
               />
               <h3 className="h1 display-4 fw-bold mb-4">

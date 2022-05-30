@@ -1,24 +1,19 @@
-import red_quote from "../images/red-quote.png";
-import blue_quote from "../images/quotes_blue.png";
-
 const Testimonies = () => {
   return (
     <>
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap');
+      <style>{`
     .red-quote {
-        width: 34px;
-        height: 28px;
+        font-size: 2rem;
+        color: #B00000;
     }
-    .red-quote-bottom {
-        transform: rotateY(180deg) rotateX(180deg);        
-        position: relative;
-        
-    }
+
+    
     .blue-quote {
         position: relative;
         top: 1rem;
         right: 1.75rem;
-        
+        color: #2EC5CE;
+        opacity: .5;
     }
    
     .card-title.h5 {
@@ -26,48 +21,41 @@ const Testimonies = () => {
     }
 
     @media (min-width: 768px) {
-      {/* .red-quote-bottom {
-        left: 5rem;
-      } */}
+      .red-quote {
+        font-size: 3rem;
+      }
     }
 
     @media (min-width: 1024px) {
       .red-quote {
-        width: 69px;
-        height: 55px;
+        font-size: 4rem;
     }
 
     #putin {
       position: relative;
       top: 8rem;
     }
-
-    {/* .red-quote-bottom {
-        left: 20rem;
-      } */}
+    
     }
 
     `}</style>
-      <div id="testimonials" className="container mb-5">
-        <div className="container mb-5">
+      <section id="testimonials" className="container-fluid bg-white my-5">
+        <div id="testimonials-target" className="link-target"></div>
+        <div className="container p-5 bg-white">
           {/* ______ Top Row */}
-          <div className="row">
-            <div className="col-3">
-              <img
-                className="red-quote mx-auto img-fluid mt-auto mb-0"
-                alt="quotation mark"
-                src={red_quote}
-              />
+          <div className="row mb-5">
+            <div className="col-3 text-center col-md-4">
+              <i className="fa-solid fa-quote-left red-quote"></i>
             </div>
-            <div className="col-6">
-              <h2 className="h1 ms-5 fw-bold">
+            <div className="col-9 col-md-4">
+              <h2 className="h1 ms-md-5 fw-bold">
                 Testimonies from Our Customers
               </h2>
             </div>
-            <div className="col-3"></div>
+            <div className="col-md-4"></div>
           </div>
           {/* ______ Middle Row With Individual Quotes*/}
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="row gx-lg-5">
               {/* ______ Card 1*/}
               <div className="col-lg-2"></div>
@@ -76,12 +64,7 @@ const Testimonies = () => {
                   id="putin"
                   className="border-0 shadow pt-5 pb-4 ps-5 pe-4 my-3 card "
                 >
-                  <img
-                    className="blue-quote opacity-50"
-                    src={blue_quote}
-                    width="16p"
-                    alt="blue quote"
-                  />
+                  <i className="fa-solid fa-quote-left blue-quote"></i>
                   <div className="card-text">
                     <p className="lh-lg text-black fw-bold text-opacity-75 mb-4">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
@@ -102,12 +85,7 @@ const Testimonies = () => {
                   id="riley"
                   className="border-0 shadow pt-5 pb-4 ps-5 pe-4 mt-3 card "
                 >
-                  <img
-                    className="blue-quote opacity-50"
-                    src={blue_quote}
-                    width="16p"
-                    alt="blue quote"
-                  />
+                  <i className="fa-solid fa-quote-left blue-quote"></i>
                   <div className="card-text">
                     <p className="lh-lg text-black fw-bold text-opacity-75 mb-4">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
@@ -133,12 +111,7 @@ const Testimonies = () => {
                   id="huey"
                   className="border-0 shadow pt-5 pb-4 ps-5 pe-4 mt-3 mb-5 card "
                 >
-                  <img
-                    className="blue-quote opacity-50"
-                    src={blue_quote}
-                    width="16p"
-                    alt="blue quote"
-                  />
+                  <i className="fa-solid fa-quote-left blue-quote"></i>
                   <div className="card-text">
                     <p className="lh-lg text-black fw-bold text-opacity-75 mb-md-4">
                       Enrolling with Hackton academy is the best decision I have
@@ -156,7 +129,7 @@ const Testimonies = () => {
           </div>
           {/* ______ Bottom Row */}
           <div className="row my-md-5">
-            <div className="col-9 col-md-6 mb-md-5">
+            <div className="col-9 col-md-5 col-md-6 mb-md-5">
               <h2 className="h1 fw-bold">
                 Every year 1000+ students register with us and lot more get
                 certified
@@ -166,17 +139,12 @@ const Testimonies = () => {
                 today
               </p>
             </div>
-            <div className="col-1 col-sm-3"></div>
-            <div className="col-2 col-sm-3">
-              <img
-                className="red-quote red-quote-bottom img-fluid mt-auto mb-0"
-                alt="quotation mark"
-                src={red_quote}
-              />
+            <div className="col-3 col-md-6 text-center">
+              <i className="fa-solid fa-quote-right red-quote"></i>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

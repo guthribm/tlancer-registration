@@ -4,6 +4,8 @@ const HeroFull = () => {
     <>
       <style>
         {`
+
+        
         #home {
           background: blue;
           position: absolute;
@@ -15,8 +17,7 @@ const HeroFull = () => {
        }  
 
        .hero-text {
-           font-size: 2.25rem;
-           
+           font-size: 2.25rem;                     
        }
        
 
@@ -54,7 +55,7 @@ const HeroFull = () => {
        
         `}
       </style>
-      <div
+      <section
         className="px-0 bg-black py-5 bg-opacity-75"
         style={{
           background: `url(${HeroFullImg})`,
@@ -64,24 +65,24 @@ const HeroFull = () => {
           backgroundSize: "cover",
         }}
       >
-        <div id="home"></div>
-        <div id="home-container" class="container-fluid">
-          <div class="row">
-            <div class="col text-center text-white">
-              <h1 class="hero-text lh-md-lg px-md-5">
+        <div id="home-target" className="link-target"></div>
+        <div id="home-container" className="container-fluid">
+          <div className="row">
+            <div className="col text-center text-white">
+              <h1 id="hero-text" className="hero-text lh-md-lg px-md-5">
                 Welcome to Tlancer where you can learn thousands of courses at
                 your own pace here from the best tutors across the world
               </h1>
             </div>
-            <div class="col-md-12 text-center my-5">
-              <a href="#student" class="btn fs-2 fw-bold px-5 btn-lg ">
+            <div className="col-md-12 text-center my-5">
+              <a href="#student" className="btn px-5 btn-lg ">
                 Get Started
               </a>
             </div>
           </div>
           <br />
         </div>
-      </div>
+      </section>
     </>
   );
 };

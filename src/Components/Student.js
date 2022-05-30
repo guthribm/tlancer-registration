@@ -46,12 +46,15 @@ const Student = () => {
            
             `}</style>
 
-      <section id="student" className="px-0">
-        <div className="container-fluid py-md-5">
+      <section id="student" className="px-0 my-5">
+        <div id="student-target" className="link-target"></div>
+        <div className="container py-md-5">
           <div className="row my-5 py-5 mx-auto gx-5">
             <div className="col-md-6 text-end mb-5 mt-md-0">
               <img
                 className="img-fluid"
+                width="681"
+                height="454"
                 alt="student on computer"
                 src={studentImg}
               />
@@ -68,6 +71,7 @@ const Student = () => {
                 onClick={studentHandler}
                 id="student-signup-btn"
                 className="btn btn-lg px-5 mt-4"
+                aria-label="Toggle student sign-up form"
               >
                 Sign Up Today
               </button>
@@ -75,8 +79,8 @@ const Student = () => {
               <form
                 id="student-form"
                 className="flex-column w-50"
-                action="mailto:guthribm@gmail.com"
-                method="post"
+                // action="mailto:guthribm@gmail.com"
+                // method="post"
                 encType="text/plain"
               >
                 <input

@@ -67,7 +67,7 @@ const ContactUs = () => {
           #contact-list {
             width: 50%;            
           }
-          .fa-brands, .fa-solid { 
+          #contact-list .fa-brands, #contact-list .fa-solid { 
           margin-right: 1rem;
           margin-bottom: 0;
           }
@@ -98,8 +98,9 @@ const ContactUs = () => {
           }
         }
     `}</style>
-      <section id="contact" className="px-0 py-5 px-md-5">
-        <div className="container-fluid py-2 px-md-5 pb-3">
+      <section id="contact" className="px-0 my-5 px-md-5">
+        <div id="contact-target" className="link-target"></div>
+        <div className="container-fluid py-5 px-md-5 pb-3">
           <div className="row">
             <div className="col text-center">
               <h2 className="h1 fw-bold">Contact Us</h2>
@@ -112,25 +113,15 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div className="row gx-5">
-            <div className="col-xl-9 container-fluid">
+          <div className="row text-center gx-5">
+            <div className="col-xl-9 container-fluid px-4">
               <img
                 src={contactImage}
                 alt="map location"
-                className="img-fluid mb-4"
+                width="1163"
+                height="467"
+                className="img-fluid mx-auto mb-4"
               />
-              {/* <div className="embed-responsive embed-responsive-16by9 mb-5">
-                <iframe
-                  className="embed-responsive-item map mx-auto d-flex"
-                  title="tbilisi-map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190556.07526446038!2d44.698426158779384!3d41.73262998765188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61d084ede2576ea3!2sTbilisi%2C%20Georgia!5e0!3m2!1sen!2sus!4v1653438434499!5m2!1sen!2sus"
-                  // style={{ border: "0" }}
-                  width="720"
-                  height="480"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div> */}
             </div>
             <div className="col-xl-3">
               <ul
@@ -138,7 +129,7 @@ const ContactUs = () => {
                 className="d-flex flex-column justify-content-center align-items-center text-center"
               >
                 <li>
-                  <i class="fa-solid fa-location-dot contact-icon"></i>
+                  <i className="fa-solid fa-location-dot contact-icon"></i>
                   <a
                     target={"_blank"}
                     rel={"noreferrer"}
@@ -151,7 +142,7 @@ const ContactUs = () => {
                 </li>
                 <li>
                   <i
-                    class="fa-solid fa-phone-volume contact-icon"
+                    className="fa-solid fa-phone-volume contact-icon"
                     style={{ transform: "rotate(-45deg)" }}
                   ></i>
                   <a
@@ -165,7 +156,7 @@ const ContactUs = () => {
                   </a>
                 </li>
                 <li>
-                  <i class="fa-solid fa-envelope contact-icon"></i>
+                  <i className="fa-solid fa-envelope contact-icon"></i>
                   <a
                     target={"_blank"}
                     rel={"noreferrer"}
@@ -177,7 +168,7 @@ const ContactUs = () => {
                   </a>
                 </li>
                 <li>
-                  <i class="fa-brands fa-twitter fs-2 text-primary"></i>
+                  <i className="fa-brands fa-twitter fs-2 text-primary"></i>
                   <a
                     target={"_blank"}
                     rel={"noreferrer"}
@@ -189,7 +180,7 @@ const ContactUs = () => {
                   </a>
                 </li>
                 <li>
-                  <i class="fa-brands fa-facebook fs-2 text-primary"></i>
+                  <i className="fa-brands fa-facebook fs-2 text-primary"></i>
                   <a
                     target={"_blank"}
                     rel={"noreferrer"}
@@ -201,7 +192,7 @@ const ContactUs = () => {
                   </a>
                 </li>
                 <li>
-                  <i class="fa-brands fa-linkedin fs-2 text-primary"></i>
+                  <i className="fa-brands fa-linkedin fs-2 text-primary"></i>
                   <a
                     target={"_blank"}
                     rel={"noreferrer"}

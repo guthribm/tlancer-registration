@@ -26,7 +26,8 @@ const About = () => {
                 font-weight: 700;
             }
         `}</style>
-      <section id="about" className="px-0 p-md-5">
+      <section id="about" className="px-0 p-md-5 my-5">
+        <div id="about-target" className="link-target"></div>
         <div className="container py-5">
           <div className="row">
             <div className="col text-center">
@@ -47,6 +48,8 @@ const About = () => {
                 id="about-img"
                 src={aboutImage}
                 alt="man in suit"
+                width="447"
+                height="569"
                 className="img-fluid mb-5 my-lg-0 float-md-start px-0 me-md-5"
               />
               <h3 className="h1 display-4 fw-bold mb-4">
