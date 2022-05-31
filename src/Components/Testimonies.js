@@ -41,7 +41,7 @@ const Testimonies = () => {
     `}</style>
       <section id="testimonials" className="container-fluid bg-white my-5">
         <div id="testimonials-target" className="link-target"></div>
-        <div className="container p-5 bg-white">
+        <div className="container p-md-5 bg-white">
           {/* ______ Top Row */}
           <div className="row mb-5">
             <div className="col-3 text-center col-md-4">
