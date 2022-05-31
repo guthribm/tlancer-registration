@@ -2,8 +2,8 @@ const Footer = () => {
   return (
     <>
       <style type="text/css">
-        {`@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+        {`
+       
         
         .foot {
           width: 100vw!important;
@@ -21,7 +21,7 @@ const Footer = () => {
 
         @media (min-width: 768px) {
           .social-icons .col {
-          margin: 0;
+            margin: 0;
         }
         }
         
@@ -42,7 +42,7 @@ const Footer = () => {
 
             <div className="col-10">
               <div className="col ms-0 ps-0 border-bottom pb-4 border-light">
-                <h2 className="fw-bold display-5">Tlancer</h2>
+                <h2 className="fw-bold display-5 logo text-white">Tlancer</h2>
                 <p className="h6 lh-base fw-normal">
                   Design amazing digital experiences that create more happy in
                   the world.

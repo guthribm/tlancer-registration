@@ -7,7 +7,7 @@ const Tutor = () => {
   }
   return (
     <>
-      <style type="text/css">{`@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700&display=swap');
+      <style type="text/css">{`
              
             #tutor-form {
               position: relative;                     
