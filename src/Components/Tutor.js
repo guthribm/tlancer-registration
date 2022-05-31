@@ -1,6 +1,6 @@
 import tutorImg from "../images/instructor.webp";
 
-const Tutor = () => {
+const Tutor = (props) => {
   function tutorHandler() {
     document.getElementById("tutor-signup-btn").style.display = "none";
     document.getElementById("tutor-form").style.display = "flex";
@@ -25,21 +25,20 @@ const Tutor = () => {
                 width: 100%;
             }
             .tutor-btn {
-                background: #0ECD88;
+                background: var(--main-green);
                 letter-spacing: .8px;
                 border: none;
             }
-            .left {
-                width: 50px;
 
-            }
+            
+            
             `}</style>
       <section id="tutor" className="px-0 my-5">
         <div id="tutor-target" className="link-target"></div>
         <div className="container pt-md-5 pb-md-1">
           <div className="row py-5 my-5 gx-5 mx-auto">
             <div className="col-md-6 order-2 order-md-1 ps-md-3 text-center text-md-start">
-              <h2 className="fw-bold h1">Become a Tutor Today</h2>
+              <h2 className={`fw-bold h1`}>Become a Tutor Today</h2>
               <p className="body-text fs-4 text-dark my-3">
                 Join thousands of other instructors on Tlancer to teach millions
                 across the globe. We provide the tools and skills to teach what

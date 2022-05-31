@@ -1,5 +1,5 @@
 import HeroFullImg from "../images/HeroFullImage.webp";
-const HeroFull = () => {
+const HeroFull = (props) => {
   return (
     <>
       <style>
@@ -67,9 +67,15 @@ const HeroFull = () => {
       >
         <div id="home-target" className="link-target"></div>
         <div id="home-container" className="container-fluid">
-          <div className="row">
-            <div className="col text-center text-white">
-              <h1 id="hero-text" className="hero-text lh-md-lg px-md-5">
+          <div className={`row`}>
+            <div className={`col text-center text-white`}>
+              <h1
+                ref={props.heroRef}
+                id="hero-text"
+                className={`hero-text lh-md-lg px-md-5 slide-title ${
+                  props.refIsVisible ? "animateTitle" : ""
+                }`}
+              >
                 Welcome to Tlancer where you can learn thousands of courses at
                 your own pace here from the best tutors across the world
               </h1>

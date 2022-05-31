@@ -1,6 +1,6 @@
 import studentImg from "../images/student-img.webp";
 
-const Student = () => {
+const Student = (props) => {
   function studentHandler() {
     document.getElementById("student-signup-btn").style.display = "none";
     document.getElementById("student-form").style.display = "flex";
@@ -61,7 +61,7 @@ const Student = () => {
             </div>
 
             <div className="col text-center text-md-start ps-md-3">
-              <h2 className="fw-bold h1">Register and join other students</h2>
+              <h2 className={`fw-bold h1`}>Register and join other students</h2>
               <p className="body-text fs-4 text-dark my-3">
                 Join thousands of other students on Tlancer to teach millions
                 across the globe. We provide the tools and skills to teach what
@@ -77,8 +77,11 @@ const Student = () => {
               </button>
 
               <form
+                ref={props.studentFormRef}
                 id="student-form"
-                className="flex-column w-50"
+                className={`flex-column w-50 slide-title ${
+                  props.studentFormRefIsVisible ? "animateTitle" : ""
+                }`}
                 // action="mailto:guthribm@gmail.com"
                 // method="post"
                 encType="text/plain"

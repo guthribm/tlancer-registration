@@ -3,10 +3,7 @@ const NavbarMain = () => {
     <>
       <style type="text/css">
         {`        
-            :root {
-              --main-green: #0ecd88;
-              --main-green-hover: rgba(14, 205, 136, .7);
-            }
+            
 
             nav {
               font-family: 'Ubuntu', sans-serif;
@@ -29,7 +26,7 @@ const NavbarMain = () => {
                color: var(--main-green);              
                text-decoration: none;
                cursor:pointer;
-               outline: none;
+               outline: none;               
             }
             .logo:hover, .logo:focus {
                 color: var(--main-green-hover);

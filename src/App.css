@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 :root {
+  
   --main-green: #0ecd88;
   --main-green-hover: rgba(14, 205, 136, .7);
 }
@@ -20,7 +21,7 @@ html, body {
 
 .btn {
   background: var(--main-green)!important;
-  color: #fff!important;
+  color: #fff!important;  
   /* width: 250px!important;   */
 }
 .body-text {
@@ -78,5 +79,39 @@ section + section {
 ::-webkit-scrollbar-button {
   background: var(--main-green-hover);
 }
+}
+
+/* Animation Section */
+
+.slide-title {
+  opacity: 0;              
+}
+
+.animateTitle {
+  display: inline-block;
+  animation: title-animator 3.5s ease forwards;
+}
+@keyframes title-animator {
+  0% {
+    transform: scale(5) translateY(-5rem);    
+    opacity: 0;    
+  }
+  25% {        
+    transform: scale(.98) translateX(0);
+    opacity: .4;    
+  }  
+  50% {  
+    opacity: .8;
+    transform: scale(1); 
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, .2);
+  }  
+  75% {
+    opacity: 1;    
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, .8);
+  }     
+  100% {
+    text-shadow:  0px 0px 0px rgba(255, 255, 255, 0);
+    opacity: 1;
+  }
 }
 
